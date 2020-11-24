@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-11-24 Tue 03:58 -->
+<!-- 2020-11-24 Tue 11:42 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>directives for strptime/strftime</title>
@@ -255,15 +255,15 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org20af184">year</a></li>
-<li><a href="#org62a41b4">month</a></li>
-<li><a href="#orgd455e6d">day</a></li>
-<li><a href="#orgb84a171">time</a></li>
-<li><a href="#orgf28b52b">timezone</a></li>
-<li><a href="#org639be5b">week</a></li>
-<li><a href="#org468a004">locale representation for time/date/datetime</a></li>
-<li><a href="#org1b64dba">ISO 8601 parameters</a></li>
-<li><a href="#org8cfa69d">extra</a></li>
+<li><a href="#orgadf983d">year</a></li>
+<li><a href="#org9204310">month</a></li>
+<li><a href="#orgbe552af">day</a></li>
+<li><a href="#org679e041">time</a></li>
+<li><a href="#org9bf5b3a">timezone</a></li>
+<li><a href="#orgf85686c">week</a></li>
+<li><a href="#org1d41879">locale representation for time/date/datetime</a></li>
+<li><a href="#orgc21791c">ISO 8601 parameters</a></li>
+<li><a href="#org39b4b2a">extra</a></li>
 </ul>
 </div>
 </div>
@@ -271,39 +271,39 @@ for the JavaScript code in this tag.
 reference date time: 2019-06-07 07:03:12.234394
 </p>
 
-<div id="outline-container-org20af184" class="outline-2">
-<h2 id="org20af184">year</h2>
-<div class="outline-text-2" id="text-org20af184">
+<div id="outline-container-orgadf983d" class="outline-2">
+<h2 id="orgadf983d">year</h2>
+<div class="outline-text-2" id="text-orgadf983d">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-right" />
-
 <col  class="org-left" />
+
+<col  class="org-right" />
 
 <col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
+<td class="org-left">year</td>
 <td class="org-right">2019</td>
 <td class="org-left"><code>%Y</code></td>
-<td class="org-left">year</td>
 </tr>
 
 <tr>
+<td class="org-left">year, 2-digits, zero-padded</td>
 <td class="org-right">19</td>
 <td class="org-left"><code>%y</code></td>
-<td class="org-left">year, 2-digits, zero-padded</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-org62a41b4" class="outline-2">
-<h2 id="org62a41b4">month</h2>
-<div class="outline-text-2" id="text-org62a41b4">
+<div id="outline-container-org9204310" class="outline-2">
+<h2 id="org9204310">month</h2>
+<div class="outline-text-2" id="text-org9204310">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -316,192 +316,192 @@ reference date time: 2019-06-07 07:03:12.234394
 </colgroup>
 <tbody>
 <tr>
+<td class="org-left">month full name (locale specific)</td>
 <td class="org-left">June</td>
 <td class="org-left"><code>%B</code></td>
-<td class="org-left">month full name (locale specific)</td>
 </tr>
 
 <tr>
+<td class="org-left">month abbreviated name (locale specific)</td>
 <td class="org-left">Jun</td>
 <td class="org-left"><code>%b</code></td>
-<td class="org-left">month abbreviated name (locale specific)</td>
 </tr>
 
 <tr>
+<td class="org-left">month, zero-padded</td>
 <td class="org-left">06</td>
 <td class="org-left"><code>%m</code></td>
-<td class="org-left">month, zero-padded</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-orgd455e6d" class="outline-2">
-<h2 id="orgd455e6d">day</h2>
-<div class="outline-text-2" id="text-orgd455e6d">
+<div id="outline-container-orgbe552af" class="outline-2">
+<h2 id="orgbe552af">day</h2>
+<div class="outline-text-2" id="text-orgbe552af">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-right" />
-
 <col  class="org-left" />
+
+<col  class="org-right" />
 
 <col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
+<td class="org-left">day of the month, zero-padded</td>
 <td class="org-right">07</td>
 <td class="org-left"><code>%d</code></td>
-<td class="org-left">day of the month, zero-padded</td>
 </tr>
 
 <tr>
+<td class="org-left">day of the year, zero-padded</td>
 <td class="org-right">158</td>
 <td class="org-left"><code>%j</code></td>
-<td class="org-left">day of the year, zero-padded</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-orgb84a171" class="outline-2">
-<h2 id="orgb84a171">time</h2>
-<div class="outline-text-2" id="text-orgb84a171">
+<div id="outline-container-org679e041" class="outline-2">
+<h2 id="org679e041">time</h2>
+<div class="outline-text-2" id="text-org679e041">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-right" />
-
 <col  class="org-left" />
+
+<col  class="org-right" />
 
 <col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
+<td class="org-left">hour, 24h clock, zero-padded</td>
 <td class="org-right">07</td>
 <td class="org-left"><code>%H</code></td>
-<td class="org-left">hour, 24h clock, zero-padded</td>
 </tr>
 
 <tr>
+<td class="org-left">hour, 12h clock, zero-padded</td>
 <td class="org-right">07</td>
 <td class="org-left"><code>%I</code></td>
-<td class="org-left">hour, 12h clock, zero-padded</td>
 </tr>
 
 <tr>
+<td class="org-left">minute, zero-padded</td>
 <td class="org-right">03</td>
 <td class="org-left"><code>%M</code></td>
-<td class="org-left">minute, zero-padded</td>
 </tr>
 
 <tr>
+<td class="org-left">second, zero-padded</td>
 <td class="org-right">12</td>
 <td class="org-left"><code>%S</code></td>
-<td class="org-left">second, zero-padded</td>
 </tr>
 
 <tr>
+<td class="org-left">microsecond, zero-padded</td>
 <td class="org-right">234394</td>
 <td class="org-left"><code>%f</code></td>
-<td class="org-left">microsecond, zero-padded</td>
 </tr>
 
 <tr>
+<td class="org-left">AM/PM (locale specific)</td>
 <td class="org-right">AM</td>
 <td class="org-left"><code>%p</code></td>
-<td class="org-left">AM/PM (locale specific)</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-orgf28b52b" class="outline-2">
-<h2 id="orgf28b52b">timezone</h2>
-<div class="outline-text-2" id="text-orgf28b52b">
+<div id="outline-container-org9bf5b3a" class="outline-2">
+<h2 id="org9bf5b3a">timezone</h2>
+<div class="outline-text-2" id="text-org9bf5b3a">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-right" />
-
 <col  class="org-left" />
+
+<col  class="org-right" />
 
 <col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
+<td class="org-left">time zone name</td>
 <td class="org-right">UTC</td>
 <td class="org-left"><code>%Z</code></td>
-<td class="org-left">time zone name</td>
 </tr>
 
 <tr>
+<td class="org-left">UTC offset in the form ±HHMM[SS[.ffffff]]</td>
 <td class="org-right">+0000</td>
 <td class="org-left"><code>%z</code></td>
-<td class="org-left">UTC offset in the form ±HHMM[SS[.ffffff]]</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-org639be5b" class="outline-2">
-<h2 id="org639be5b">week</h2>
-<div class="outline-text-2" id="text-org639be5b">
+<div id="outline-container-orgf85686c" class="outline-2">
+<h2 id="orgf85686c">week</h2>
+<div class="outline-text-2" id="text-orgf85686c">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-right" />
-
 <col  class="org-left" />
+
+<col  class="org-right" />
 
 <col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
+<td class="org-left">weekday full name (locale specific)</td>
 <td class="org-right">Friday</td>
 <td class="org-left"><code>%A</code></td>
-<td class="org-left">weekday full name (locale specific)</td>
 </tr>
 
 <tr>
+<td class="org-left">weekday abbreviated name (locale specific)</td>
 <td class="org-right">Fri</td>
 <td class="org-left"><code>%a</code></td>
-<td class="org-left">weekday abbreviated name (locale specific)</td>
 </tr>
 
 <tr>
+<td class="org-left">weekday as a number Sunday is 0</td>
 <td class="org-right">5</td>
 <td class="org-left"><code>%w</code></td>
-<td class="org-left">weekday as a number Sunday is 0</td>
 </tr>
 
 <tr>
+<td class="org-left">week number of the year, zero-padded, Monday first day</td>
 <td class="org-right">22</td>
 <td class="org-left"><code>%W</code></td>
-<td class="org-left">week number of the year, zero-padded, Monday first day</td>
 </tr>
 
 <tr>
+<td class="org-left">week number of the year, zero-padded Sunday first day</td>
 <td class="org-right">22</td>
 <td class="org-left"><code>%U</code></td>
-<td class="org-left">week number of the year, zero-padded Sunday first day</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-org468a004" class="outline-2">
-<h2 id="org468a004">locale representation for time/date/datetime</h2>
-<div class="outline-text-2" id="text-org468a004">
+<div id="outline-container-org1d41879" class="outline-2">
+<h2 id="org1d41879">locale representation for time/date/datetime</h2>
+<div class="outline-text-2" id="text-org1d41879">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -514,66 +514,66 @@ reference date time: 2019-06-07 07:03:12.234394
 </colgroup>
 <tbody>
 <tr>
+<td class="org-left">time representation</td>
 <td class="org-left">07:03:12</td>
 <td class="org-left"><code>%X</code></td>
-<td class="org-left">time representation</td>
 </tr>
 
 <tr>
+<td class="org-left">date representation</td>
 <td class="org-left">06/07/19</td>
 <td class="org-left"><code>%x</code></td>
-<td class="org-left">date representation</td>
 </tr>
 
 <tr>
+<td class="org-left">datetime representation</td>
 <td class="org-left">Fri Jun  7 07:03:12 2019</td>
 <td class="org-left"><code>%c</code></td>
-<td class="org-left">datetime representation</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-org1b64dba" class="outline-2">
-<h2 id="org1b64dba">ISO 8601 parameters</h2>
-<div class="outline-text-2" id="text-org1b64dba">
+<div id="outline-container-orgc21791c" class="outline-2">
+<h2 id="orgc21791c">ISO 8601 parameters</h2>
+<div class="outline-text-2" id="text-orgc21791c">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
+<col  class="org-left" />
+
 <col  class="org-right" />
 
 <col  class="org-left" />
-
-<col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
+<td class="org-left">ISO 8601 year</td>
 <td class="org-right">2019</td>
 <td class="org-left"><code>%G</code></td>
-<td class="org-left">ISO 8601 year</td>
 </tr>
 
 <tr>
+<td class="org-left">ISO 8601 weekday</td>
 <td class="org-right">5</td>
 <td class="org-left"><code>%u</code></td>
-<td class="org-left">ISO 8601 weekday</td>
 </tr>
 
 <tr>
+<td class="org-left">ISO 8601 week number, Monday first day</td>
 <td class="org-right">23</td>
 <td class="org-left"><code>%V</code></td>
-<td class="org-left">ISO 8601 week number, Monday first day</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-org8cfa69d" class="outline-2">
-<h2 id="org8cfa69d">extra</h2>
-<div class="outline-text-2" id="text-org8cfa69d">
+<div id="outline-container-org39b4b2a" class="outline-2">
+<h2 id="org39b4b2a">extra</h2>
+<div class="outline-text-2" id="text-org39b4b2a">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -586,9 +586,9 @@ reference date time: 2019-06-07 07:03:12.234394
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left"><code>%%</code></td>
 <td class="org-left">literal <code>%</code> character</td>
+<td class="org-left">%</td>
+<td class="org-left"><code>%%</code></td>
 </tr>
 </tbody>
 </table>
@@ -598,7 +598,7 @@ reference date time: 2019-06-07 07:03:12.234394
 <div id="postamble" class="status">
 <p class="date">Date: 2020-11-24</p>
 <p class="author">Author: Keshab Paudel</p>
-<p class="date">Created: 2020-11-24 Tue 03:58</p>
+<p class="date">Created: 2020-11-24 Tue 11:42</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
