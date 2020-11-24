@@ -10,54 +10,54 @@ reference date time: 2019-06-07 07:03:12.234394
 
 * year
 
-| 2019 | ~%Y~ | year                        |
-|   19 | ~%y~ | year, 2-digits, zero-padded |
+| year                        | 2019 | ~%Y~ |
+| year, 2-digits, zero-padded |   19 | ~%y~ |
 
 * month
 
-| June | ~%B~ | month full name (locale specific)        |
-| Jun  | ~%b~ | month abbreviated name (locale specific) |
-| 06   | ~%m~ | month, zero-padded                       |
+| month full name (locale specific)        | June | ~%B~ |
+| month abbreviated name (locale specific) | Jun  | ~%b~ |
+| month, zero-padded                       | 06   | ~%m~ |
 
 * day
 
-|  07 | ~%d~      | day of the month, zero-padded |
-| 158 | ~%j~      | day of the year, zero-padded  |
+| day of the month, zero-padded |  07 | ~%d~ |
+| day of the year, zero-padded  | 158 | ~%j~ |
 
 * time
 
-|     07 | ~%H~ | hour, 24h clock, zero-padded |
-|     07 | ~%I~ | hour, 12h clock, zero-padded |
-|     03 | ~%M~ | minute, zero-padded          |
-|     12 | ~%S~ | second, zero-padded          |
-| 234394 | ~%f~ | microsecond, zero-padded     |
-|     AM | ~%p~ | AM/PM (locale specific)      |
+| hour, 24h clock, zero-padded |     07 | ~%H~ |
+| hour, 12h clock, zero-padded |     07 | ~%I~ |
+| minute, zero-padded          |     03 | ~%M~ |
+| second, zero-padded          |     12 | ~%S~ |
+| microsecond, zero-padded     | 234394 | ~%f~ |
+| AM/PM (locale specific)      |     AM | ~%p~ |
 
 * timezone
 
-|   UTC | ~%Z~ | time zone name                            |
-| +0000 | ~%z~ | UTC offset in the form ±HHMM[SS[.ffffff]] |
+| time zone name                            |   UTC | ~%Z~ |
+| UTC offset in the form ±HHMM[SS[.ffffff]] | +0000 | ~%z~ |
 
 * week
 
-| Friday | ~%A~ | weekday full name (locale specific)                    |
-|    Fri | ~%a~ | weekday abbreviated name (locale specific)             |
-|      5 | ~%w~ | weekday as a number Sunday is 0                        |
-|     22 | ~%W~ | week number of the year, zero-padded, Monday first day |
-|     22 | ~%U~ | week number of the year, zero-padded Sunday first day  |
+| weekday full name (locale specific)                    | Friday | ~%A~ |
+| weekday abbreviated name (locale specific)             |    Fri | ~%a~ |
+| weekday as a number Sunday is 0                        |      5 | ~%w~ |
+| week number of the year, zero-padded, Monday first day |     22 | ~%W~ |
+| week number of the year, zero-padded Sunday first day  |     22 | ~%U~ |
 
 * locale representation for time/date/datetime
 
-| 07:03:12                 | ~%X~ | time representation     |
-| 06/07/19                 | ~%x~ | date representation     |
-| Fri Jun  7 07:03:12 2019 | ~%c~ | datetime representation |
+| time representation     | 07:03:12                 | ~%X~ |
+| date representation     | 06/07/19                 | ~%x~ |
+| datetime representation | Fri Jun  7 07:03:12 2019 | ~%c~ |
 
 * ISO 8601 parameters
 
-| 2019 | ~%G~ | ISO 8601 year                          |
-|    5 | ~%u~ | ISO 8601 weekday                       |
-|   23 | ~%V~ | ISO 8601 week number, Monday first day |
+| ISO 8601 year                          | 2019 | ~%G~ |
+| ISO 8601 weekday                       |    5 | ~%u~ |
+| ISO 8601 week number, Monday first day |   23 | ~%V~ |
 
 * extra
 
-|   | ~%%~ | literal ~%~ character |
+| literal ~%~ character | % | ~%%~ |
