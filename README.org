@@ -1,0 +1,63 @@
+#+TITLE: directives for strptime/strftime
+#+DESCRIPTION: Codes to use to either format or parse date/datetime/time in Python
+#+AUTHOR: Keshab Paudel
+#+DATE: 2020-11-24
+#+LANGUAGE: en
+#+OPTIONS: num:nil
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+reference date time: 2019-06-07 07:03:12.234394
+
+* year
+
+| 2019 | ~%Y~ | year                        |
+|   19 | ~%y~ | year, 2-digits, zero-padded |
+
+* month
+
+| June | ~%B~ | month full name (locale specific)        |
+| Jun  | ~%b~ | month abbreviated name (locale specific) |
+| 06   | ~%m~ | month, zero-padded                       |
+
+* day
+
+|  07 | ~%d~      | day of the month, zero-padded |
+| 158 | ~%j~      | day of the year, zero-padded  |
+
+* time
+
+|     07 | ~%H~ | hour, 24h clock, zero-padded |
+|     07 | ~%I~ | hour, 12h clock, zero-padded |
+|     03 | ~%M~ | minute, zero-padded          |
+|     12 | ~%S~ | second, zero-padded          |
+| 234394 | ~%f~ | microsecond, zero-padded     |
+|     AM | ~%p~ | AM/PM (locale specific)      |
+
+* timezone
+
+|   UTC | ~%Z~ | time zone name                            |
+| +0000 | ~%z~ | UTC offset in the form ±HHMM[SS[.ffffff]] |
+
+* week
+
+| Friday | ~%A~ | weekday full name (locale specific)                    |
+|    Fri | ~%a~ | weekday abbreviated name (locale specific)             |
+|      5 | ~%w~ | weekday as a number Sunday is 0                        |
+|     22 | ~%W~ | week number of the year, zero-padded, Monday first day |
+|     22 | ~%U~ | week number of the year, zero-padded Sunday first day  |
+
+* locale representation for time/date/datetime
+
+| 07:03:12                 | ~%X~ | time representation     |
+| 06/07/19                 | ~%x~ | date representation     |
+| Fri Jun  7 07:03:12 2019 | ~%c~ | datetime representation |
+
+* ISO 8601 parameters
+
+| 2019 | ~%G~ | ISO 8601 year                          |
+|    5 | ~%u~ | ISO 8601 weekday                       |
+|   23 | ~%V~ | ISO 8601 week number, Monday first day |
+
+* extra
+
+|   | ~%%~ | literal ~%~ character |
